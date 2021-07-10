@@ -1,0 +1,62 @@
+body {
+    background-color:rgb(253, 211, 243);
+    margin: auto;
+    width: fit-content;
+}
+h1 {color:deeppink;
+    font-style:italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    background-color:rgb(164, 248, 248);
+    text-align:left;
+    }
+h2 { color:indigo;
+    background-color: hotpink;
+    font-size: 40px;
+    text-align: center;
+
+}
+h3 {color: indigo ;
+    font-family: sans-serif;
+    text-align: left;
+}
+h4 {color:black;
+    text-align:left;
+    font-size: large;    
+
+}
+.inicio {font-size: 18px;
+        font-style: italic;
+
+}
+.menu {
+        font-family:sans-serif;
+}
+
+#texto {background-color:ghostwhite;
+    margin: auto;
+}
+table{
+    margin: auto;
+    color:deeppink;
+    background-color: rgb(164, 248, 248);
+    font-size: 30px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border-style: double;
+    border-spacing: 50px;
+    }
+
+#formulario { 
+            font-weight: bolder;
+            }
+
+footer {
+    font-family: serif;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+

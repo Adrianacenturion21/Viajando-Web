@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Mi CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>ARMÁ TU VIAJE</title>
+</head>
+<body>
+ <!--Inicia mi Header-->
+    <header>
+
+        <h1>ARMÁ TU VIAJE</h1>
+        <h3>Viajá como querés</h3>
+        <br>
+<!--Menu secundario del header-->
+    <nav>
+        <ul class="inicio">
+            <li>Ingresar</li>
+            <li>Idioma
+                <ul>
+                    <li>Español</li>
+                    <li>English</li>
+                    <li>Portugués</li>
+                </ul>
+            </li>
+            <li>Home</li> 
+            <li>Ayuda</li>
+        </ul>
+    </nav>
+    <br>
+<!--Menú principal-->
+    <h3>Menú principal</h3>
+    <nav>
+        <ul class="menu"> <!--Enlaces relativos-->
+            <li> <a href="destinos.html">DESTINOS</a>
+            <ul>
+                <li>Américas</li>
+                <li>Europa</li>
+                <li>Asia y Oceanía</li>
+                <li>África</li>
+            </ul></li>
+
+            <li> <a href="vuelos.html">VUELOS</a></li>
+            <li> <a href="hoteles.html">HOTELES</a></li>
+            <li> <a href="paquetes.html">PAQUETES</a></li>
+            <li><a href="#reseñas" target="self">RESEÑAS</a></li> <!--Enlace interno-->
+        </ul>
+    </nav>
+
+    </header>
+<!--Termina mi Header-->
+<hr> 
+    <main> <!--contenido principal-->
+    <div id="texto">
+        <h2> Elegí viajar a dónde y cómo quieras</h2>
+
+        <aside> <!-- espacio que no esta relacionada al contenido del sitio ej publicidad o boton con enlace externo-->
+
+        </aside>
+        <section>
+            <article>
+                <h4>
+                    El mundo es tan grande que a la hora de viajar necesitamos inspiración para decidirnos por un destino u otro. Hoy en día podemos alcanzar prácticamente cualquier rincón del planeta; miramos mapas, leemos libros de viajes, vemos películas e imágenes compartidas en redes sociales por otros viajeros, consultamos aplicaciones viajeras en nuestros móviles… ¡Es tan difícil escoger entre todas las opciones que tenemos a nuestro alcance!
+                </h4>
+            </article>
+        </section>
+    </div>
+    <div>
+        <section>
+            <!--Video Presentación-->
+            <video src="videos/Mountains - 48873.mp4" controls autoplay>Presentación--</video>
+        </section>
+    </div>
+
+    <div>
+        <section>
+            <nav>
+                <ul>
+                    <li> <a href="destinos.html">DESTINOS</a></li>
+                    <li> <a href="vuelos.html">VUELOS</a></li>
+                    <li> <a href="hoteles.html">HOTELES</a></li>
+                    <li> <a href="paquetes.html">PAQUETES</a></li>
+                    <li><a href="#reseñas" target="self">RESEÑAS</a></li> <!--Enlace interno-->
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <div>
+        <h2>Nuestros Elegidos</h2>
+        <table>
+            <tr> <!--Enlaces absolutos-->
+                <td><a href="https://www.babelviajes.com.ar/spider/paquete/103/1944/europa-imperial">Europa Imperial</a></td>
+                <td><a href="https://solturviajes.com.ar/paquete/viaje_aereos_turquia_rusia_estambul_capadocia_moscu_alojamiento_traslados_abril_a_octubre">Rusia y Turquía</a></td>
+                <td><a href="http://www.panavision-tours.com/circuitos/combinados-canada-usa/">EE.UU. y Canadá</a></td>
+            
+            </tr>
+                <td>México y Caribe</td>
+                <td>Sudamérica</td>
+                <td>Egipto y Sudáfrica</td>
+            <tr>
+                <td>Indonesia y Australia</td>
+                <td>Medio Oriente</td>
+                <td>China y Japón</td>
+            </tr>
+            <tr></tr>
+            
+        </table>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div><!--Espacio de Reseñas-->
+        <section id="reseñas">
+            <h2>RESEÑAS</h2>
+            <form action="" method="" enctype="text/plain">
+
+                <fieldset id="formulario">
+                    <legend>Dejanos tu reseña</legend>
+                           
+                    <label for="name">Nombre:</label>
+                    <input id="name" type="text" name="name">
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email">
+                    <br><br>
+
+                    <label for="pass">Contraseña:</label>
+                    <input id="pass" type="password" name="pass">
+                    <br><br>
+                    <label for="paises">Pais:</label>
+                    <select name="paises" id="paises" required>
+                        <option value="ARG">Argentina</option>
+                        <option value="URU">Uruguay</option>
+                        <option value="CHI">Chile</option>
+                        <option value="PAR">Paraguay</option>
+                    </select>
+
+                    <br><br>
+
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" disabled>Dejanos tu reseña de viaje para que otros viajeros tengan más referencias.</textarea>
+                    <br><br>
+
+                    <label for="calendar">Elegir Fecha:</label>
+                    <input id="calendar" type="date" name="calendar">
+                    <br><br>
+                    <!--Radio-->
+                    <label>Quiero recibir Reseñas</label>
+                    <input type="radio" name="radio-igual" value="acepto">Si
+                    <input type="radio" name="radio-igual" value="no acepto">No 
+                    <br><br>
+                    <!--Checkbox-->
+                    <label for="check-1">Acepto Terminos y Condiciones</label>
+                    <input type="checkbox" name="acepto" id="check-1">
+
+
+                    <!--Botones-->
+                    <input type="button" value="Enviar">
+                    <input type="reset" value="Borrar">
+                <br><br>
+                </fieldset>
+            </form>
+    </section>
+    </div>
+    <div>
+        <!--IFRAME-->
+        <iframe src="https://www.youtube.com/watch?v=aIBZTYl8qt8" width="640" height="600">
+        </iframe>
+
+    </div>
+    </main>
+<hr>
+    <footer>
+  
+         </ul>
+            <li>Nosotros</li>
+            <li><a href="mailto:adriana_abc@live.com">Contacto</a></li>
+            <li>Políticas</li>
+        </ul>
+
+    </footer>
+</body>
+</html>

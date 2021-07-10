@@ -3,47 +3,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Viaje.com</title>
+    <title>Viajando.com</title>
     <!--CSS-->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styleindex.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Philosopher:ital,wght@1,700&display=swap" rel="stylesheet">
-
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/ec80d4ce69.js" crossorigin="anonymous"></script>
 </head>
 <body>
         <header id="header">
-            <div class="header__logo">
-                <a href="index.html"><img src="./imagenes/logo.png" alt="Logo"></a>                
-            </div>
-            <div class="header__titulo">
-                <section >
-                    <h1>Viajando.com</h1>
-                </section>
+            
+            <div class="contenedor">
+                <div class="header__logo">
+                    <a href="index.html"><img src="./imagenes/logo.png" alt="Logo"></a>                
+                </div>
+                <div class="header__titulo">
+                    <section >
+                        <h1>Viajando.com</h1>
+                    </section>
+                </div>
+
             </div>
             <div class="header__menu">
                  <nav>
                     <ul>
-                        <li><a href="vuelos.html">VUELOS</a></li>
-                        <li><a href="hoteles.html">HOTELES</a></li>
-                        <li><a href="paquetes.html">PAQUETES</a>
+                        <li><a href="vuelos.html">Armá tu Viaje</a>
+                            <ul>
+                                <li><a href="hoteles.html">Vuelos</a></li>
+                                <li><a href="hoteles.html">Hoteles</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="paquetes.html">Paquetes</a>
                             <ul>
                                 <li><a href="europa.html">Europa</a></li>
                                 <li><a href="caribe.html">Caribe</a></li>
                                 <li><a href="sudamerica.html">Sudamérica</a></li>
                             </ul>
                         </li>
-                        <li><a href="reseñas.html">RESEÑAS</a></li>
-                        <li><a href="#footer">CONTACTO</a></li>                        
+                        <li><a href="reseñas.html">Reseñas</a></li>
+                        <li><a href="#footer">Contacto</a></li>
+                        <li><a href="index.html">Home</a></li>                         
                     </ul>
                  </nav>
             </div>
             <div class="header__buscador">
                 <a href="ingresar.html">Ingresar</a>
                 <div>
-                    <label for="buscar"><icon></icon></label>
-                    <input type="search" name="buscar" id="buscar">
+                    <label for="buscar"><i class="fas fa-search"></i></label>
+                    <input type="search" name="buscar" id="buscar" placeholder="A dónde queres ir?" required >
                 </div> 
             </div>
         </header>
@@ -57,20 +67,28 @@
             </div>
             <div id="secciones">
                 <div class="seccion">
-                    <a href="vuelos.html"><img src="./imagenes/vuelos.jpg" alt="Vuelos"></a>
-                    <h3>Buscá un vuelo</h3>
+                    <img src="./imagenes/vuelos.jpg" alt="Vuelos" class="seccion-img">
+                    <a href="vuelos.html">
+                        <h3 class="seccion-titulo">Buscá un vuelo</h3>
+                    </a>
                 </div>
                 <div class="seccion">
-                    <a href="hoteles.html"><img src="./imagenes/hoteles.jpg" alt=""></a>
-                    <h3>Buscá un hotel</h3>
+                    <img src="./imagenes/hoteles.jpg" alt="Hoteles" class="seccion-img">
+                    <a href="hoteles.html">
+                        <h3 class="seccion-titulo">Buscá un hotel</h3>
+                    </a>
                 </div>
                 <div class="seccion">
-                    <a href="paquetes.html"><img src="./imagenes/paquetes.jpg" alt="paquetes"></a>
-                    <h3>Elegí un paquete</h3>
+                    <img src="./imagenes/flat-lay-camera-and-passport-arrangement.jpg" alt="paquetes" class="seccion-img">
+                    <a href="paquetes.html">
+                        <h3 class="seccion-titulo">Elegí un paquete</h3>
+                    </a>
                 </div>
                 <div class="seccion">
-                    <a href="reseñas.html"><img src="./imagenes/reseñas.jpg" alt=""></a>
-                    <h3>Inspirá a un viajero</h3>
+                    <img src="./imagenes/reseñas.jpg" alt="Reseñas" class="seccion-img">
+                    <a href="reseñas.html">
+                        <h3 class="seccion-titulo">Inspirá a un viajero</h3>
+                    </a>
                 </div>
             </div>
             <section class="container-text">
@@ -78,103 +96,64 @@
             </section>
             <div id="paquetes">
                 <div class="pack">
-                    <div class="pack-img">
-                        <img class="img" src="./imagenes/berlin.jpg" alt="Berlin">
-                    </div>
+                        <a href=""><img class="img" src="./imagenes/berlin.jpg" alt="Berlin"></a>
                     <div class="pack-text">
-                        <h3 class=>Berlin</h3>
-                        <h4 class=>10 dias $85.000</h4>
-                        <p class=>Incluye vuelos, estadia, desayuno y tours. </p>
-                        <div class="pack-button">
-                            <label for="Quiero"></label>
-                            <input type="button" value="Quiero">
-                        </div> 
+                        <h3 class="pack-text-titulo">Berlin</h3>
+                        <h4 class="pack-text-precio">10 dias $85.000</h4>
+                        <p class="pack-text-text">Incluye vuelos, estadia, desayuno y tours. </p>
                     </div>
                 </div>
                 <div class="pack">
-                    <img src="./imagenes/coliseo.jpg" alt="Roma">
+                    <a href=""><img src="./imagenes/coliseo.jpg" alt="Roma"></a>
                     <div class="pack-text">
-                        <h3>Roma</h3>
-                        <h4>10 dias $85.000</h4>
-                        <p>Incluye vuelos, estadia, desayuno y tours. </p>
-                        <div>
-                            <label for="Quiero"></label>
-                            <input type="button" value="Quiero">
-                        </div>
+                        <h3 class="pack-text-titulo">Roma</h3>
+                        <h4 class="pack-text-precio">10 dias $85.000</h4>
+                        <p class="pack-text-text">Incluye vuelos, estadia, desayuno y tours. </p>
                     </div>
                 </div>
                 <div class="pack">
-                    <img src="./imagenes/bigben bus.jpg" alt="Londres">
+                    <a href=""><img src="./imagenes/bigben bus.jpg" alt="Londres"></a>
                     <div class="pack-text">
-                        <h3>Londres</h3>
-                        <h4>8 dias $65.000</h4>
-                        <p>Incluye vuelos, estadia, desayuno y tours. </p>
-                        <div>
-                            <label for="Quiero"></label>
-                            <input type="button" value="Quiero">
-                        </div>
+                        <h3 class="pack-text-titulo">Londres</h3>
+                        <h4 class="pack-text-precio">10 dias $85.000</h4>
+                        <p class="pack-text-text">Incluye vuelos, estadia, desayuno y tours. </p>
                     </div>
                 </div>
                 <div class="pack">
-                    <img src="./imagenes/eiffel tower.jpg" alt="Paris">
+                    <a href=""><img src="./imagenes/eiffel tower.jpg" alt="Paris"></a>
                     <div class="pack-text">
-                        <h3>Paris</h3>
-                        <h4>12 dias $110.000</h4>
-                        <p>Incluye vuelos, estadia, desayuno y tours. </p>
-                        <div>
-                            <label for="Quiero"></label>
-                            <input type="button" value="Quiero">
-                        </div>
+                        <h3 class="pack-text-titulo">Paris</h3>
+                        <h4 class="pack-text-precio">10 dias $85.000</h4>
+                        <p class="pack-text-text">Incluye vuelos, estadia, desayuno y tours. </p> 
                     </div>
                 </div>
                 <div class="pack">
-                    <img src="./imagenes/barcelona.jpg" alt="Barcelona">
+                    <a href=""><img src="./imagenes/barcelona.jpg" alt="Barcelona"></a>
                     <div class="pack-text">
-                        <h3>Barcelona</h3>
-                        <h4>10 dias $85.000</h4>
-                        <p>Incluye vuelos, estadia, desayuno y tours. </p>
-                        <div>
-                            <label for="Quiero"></label>
-                            <input type="button" value="Quiero">
-                        </div>
+                        <h3 class="pack-text-titulo">Barcelona</h3>
+                        <h4 class="pack-text-precio">10 dias $85.000</h4>
+                        <p class="pack-text-text">Incluye vuelos, estadia, desayuno y tours. </p>
                     </div>
                 </div>
                 <div class="pack">
-                    <img src="./imagenes/moscu.jpg" alt="Moscu">
+                    <a href=""><img src="./imagenes/moscu.jpg" alt="Moscu"></a>
                     <div class="pack-text">
-                        <h3>Moscú</h3>
-                        <h4>6 dias $70.000</h4>
-                        <p>Incluye vuelos, estadia, desayuno y tours. </p>
-                        <div>
-                            <label for="Quiero"></label>
-                            <input type="button" value="Quiero">
-                        </div>
+                        <h3 class="pack-text-titulo">Moscú</h3>
+                        <h4 class="pack-text-precio">10 dias $85.000</h4>
+                        <p class="pack-text-text">Incluye vuelos, estadia, desayuno y tours. </p>
                     </div>
                 </div>
                 <div class="pack">
-                    <img src="./imagenes/newyork.jpg" alt="newyork">
+                    <a href=""><img src="./imagenes/newyork.jpg" alt="newyork"></a>
                     <div class="pack-text">
-                        <h3>NYC</h3>
-                        <h4>10 dias $95.000</h4>
-                        <p>Incluye vuelos, estadia, desayuno y tours. </p>
-                        <div>
-                            <label for="Quiero"></label>
-                            <input type="button" value="Quiero">
-                        </div>
+                        <h3 class="pack-text-titulo">NYC</h3>
+                        <h4 class="pack-text-precio">10 dias $85.000</h4>
+                        <p class="pack-text-text">Incluye vuelos, estadia, desayuno y tours. </p>
                     </div>
                 </div>
-            <div id="cuerpo__texto">
-                <div class="item1"><p>Enamoráte de Argentina <span></span></p></div>
-                <div class="item2"><span>Descubrí Sudamérica</span></div>
-                <div class="item1"><p>Maravillate con México <span></span></p></div>
-                <div class="item3"></div>
-                <div class="item1"><p>Disfruta Brasil</p></div>
-                <div class="item4"></div>
-            </div>
-
+            </div>   
         </main>
-        <div>
-            <footer id="footer">
+        <footer id="footer">
                 <div class="header__logo">
                     <a href="index.html"><img src="./imagenes/logo.png" alt="Logo"></a>                
                 </div>
@@ -189,19 +168,16 @@
                             <li class="footer__nosotros"><a href="nosotros.html">Nosotros</a></li>
                         </ul>
                     </nav>                
-                <div>
-                    <h2>Seguinos!</h2>
-                    <icon class="icon"><img src="./imagenes/instagram.png" alt=""></icon>
-                    <icon class="icon"><img src="./imagenes/facebook.png" alt=""></icon>
+                <div class="footer__redes">
+                    <a class="footer__icon instagram" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a class="footer__icon facebook" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
                 </div>
                 <div class="footer__contacto">
                     <h2>Contactanos</h2>
-                    <p>Email: contactoviajando@gmail.com</p>
-                    <p>Teléfonos: 011 4321-1234 
-                        Lun a Vie 8 a 18 hs</p>
+                    <p>Email: contacto@viajando.com</p>
+                    <p>Teléfonos: 011 1234-1234 
+                       Lun a Vie 8 a 18 hs</p>
                 </div>
-            </footer>
-            
-        </div>
+         </footer>
 </body>
 </html>

@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajando.com - Reseñas</title>
+     <!--Css-->
+     <link rel="stylesheet" href="./css/reset.css">
+     <link rel="stylesheet" href="./css/styleindex.css">
+     <!--Google Fonts-->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Philosopher:ital,wght@1,700&display=swap" rel="stylesheet">
+     <!--Icons-->
+     <script src="https://kit.fontawesome.com/ec80d4ce69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="header__logo">
+            <a href="index.html"><img src="./imagenes/logo.png" alt="Logo"></a>                
+        </div>
+        <div class="header__titulo">
+            <section >
+                <h1>Viajando.com</h1>
+            </section>
+        </div>
+        <div class="header__menu">
+             <nav>
+                <ul>
+                    <li><a href="vuelos.html">VUELOS</a></li>
+                    <li><a href="hoteles.html">HOTELES</a></li>
+                    <li><a href="paquetes.html">PAQUETES</a>
+                        <ul>
+                            <li><a href="">Europa</a></li>
+                            <li><a href="">Caribe</a></li>
+                            <li><a href="">Sudamérica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reseñas.html">RESEÑAS</a></li>
+                    <li><a href="#footer">CONTACTO</a></li>                        
+                </ul>
+             </nav>
+        </div>
+        <div class="header__buscador">
+            <a href="ingresar.html">Ingresar</a>
+            <div>
+                <label for="buscar"><icon></icon></label>
+                <input type="search" name="buscar" id="buscar">
+            </div> 
+        </div>
+    </header>
+    <div>
+        <h2>Inspirá a un viajero!</h2>
+        <p>Buscá reseñas de lugares y dejanos la tuya.</p>
+        <img src="./imagenes/reseñas.jpg" alt="RESEÑAS">
+      </div>
+      <div class="seccionReseñas">
+          <form action=""method="" enctype="text/plain">
+        <fieldset class="seccionReseñas__cuadro">
+            <legend class="seccionReseñas__titulo">Dejanos tu reseña!</legend>
+            <!-- NOMBRE-->
+            <div class="seccionReseñas__item">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" name="name" required>
+            </div>
+            <!-- EMAIL-->
+            <div class="seccionReseñas__item">
+                <label for="name">Email</label>
+                <input id="email" type="email" name="email" required>
+            </div>
+            <!-- REDES -->
+            <div class="seccionReseñas__item">
+                <label for="name"><i class="fab fa-instagram"> Instagram</i></label>
+                <input id="name" type="text" name="name" placeholder="@viajando.com">
+            </div>
+            <!-- DESTINO-->
+            <div class="seccionReseñas__item">
+                <label for="name">Lugar visitado:</label>
+                <input id="name" type="text" name="name">
+            </div>
+            <!-- Fecha de Viaje-->
+            <div class="seccionReseña__item">
+                <label for="calendar">Fecha apróx:</label>
+                <input id="calendar" type="date" name="calendar">
+            </div>
+            <!-- Texto Reseña-->
+            <div class="seccionReseña__item">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" id="" cols="30" rows="10" disabled>Máximo 100 caracteres</textarea>
+            </div>
+            <!--Radio-->
+            <div class="seccionReseña__item">
+                <label>Quiero recibir Reseñas</label>
+                <input type="radio" name="radio-igual" value="acepto">Si
+                <input type="radio" name="radio-igual" value="no acepto">No 
+            </div>
+            <!--Checkbox-->
+            <div class="seccionReseña__item">
+                <label for="check-1">Acepto Terminos y Condiciones</label>
+                <input type="checkbox" name="acepto" id="check-1">
+            </div>
+            <!--Botones-->
+            <div class="seccionReseñas__item">
+                <input type="button" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>
+        </fieldset></form>
+      </div>
+
+
+      <div><!--PRIMER FORMULARIO..LUEGO BORRARLO-->
+          <section>
+              <form action="" method="" enctype="text/plain">
+  
+                  <fieldset id="formulario">
+                      <legend>Dejanos tu reseña</legend>
+                             
+                      <label for="name">Nombre:</label>
+                      <input id="name" type="text" name="name">
+                      <br><br>
+  
+                      <label for="email">Email:</label>
+                      <input id="email" type="email" name="email">
+                      <br><br>
+  
+                      <label for="pass">Contraseña:</label>
+                      <input id="pass" type="password" name="pass">
+                      <br><br>
+                      <label for="paises">Pais:</label>
+                      <select name="paises" id="paises" required>
+                          <option value="ARG">Argentina</option>
+                          <option value="URU">Uruguay</option>
+                          <option value="CHI">Chile</option>
+                          <option value="PAR">Paraguay</option>
+                      </select>
+  
+                      <br><br>
+  
+                      <textarea name="" id="" cols="30" rows="10"></textarea>
+                      <textarea name="" id="" cols="30" rows="10" disabled>Dejanos tu reseña de viaje para que otros viajeros tengan más referencias.</textarea>
+                      <br><br>
+  
+                      <label for="calendar">Elegir Fecha:</label>
+                      <input id="calendar" type="date" name="calendar">
+                      <br><br>
+                      <!--Radio-->
+                      <label>Quiero recibir Reseñas</label>
+                      <input type="radio" name="radio-igual" value="acepto">Si
+                      <input type="radio" name="radio-igual" value="no acepto">No 
+                      <br><br>
+                      <!--Checkbox-->
+                      <label for="check-1">Acepto Terminos y Condiciones</label>
+                      <input type="checkbox" name="acepto" id="check-1">
+  
+  
+                      <!--Botones-->
+                      <input type="button" value="Enviar">
+                      <input type="reset" value="Borrar">
+                  <br><br>
+                  </fieldset>
+              </form>
+        </section>
+      </div>    
+      <footer id="footer">
+        <div class="header__logo">
+            <a href="index.html"><img src="./imagenes/logo.png" alt="Logo"></a>                
+        </div>
+        <div class="header__titulo">
+            <section >
+                <h1>Viajando.com</h1>
+            </section>
+        </div>                
+            <nav>
+                <ul>
+                    <li class="footer__privacidad"><a href="privacidad.html">Privacidad</a></li>
+                    <li class="footer__nosotros"><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>                
+        <div>
+            <h2>Seguinos!</h2>
+            <icon class="icon"><img src="./imagenes/instagram.png" alt=""></icon>
+            <icon class="icon"><img src="./imagenes/facebook.png" alt=""></icon>
+        </div>
+        <div class="footer__contacto">
+            <h2>Contáctanos</h2>
+            <p>Email: contactoviajando@gmail.com</p>
+            <p>Teléfonos: 011 4321-1234 
+                Lun a Vie 8 a 18 hs</p>
+        </div>
+    </footer>
+</body>
+</html>
