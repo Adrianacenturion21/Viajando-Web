@@ -1,0 +1,37 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.inicio__titulo {
+    font-size: 2.5rem;
+    font-family:Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(69, 63, 141);
+
+}
+
+.contenedor__carrusel {
+    width: 60%;
+    margin: auto;
+    
+}
+.carousel-titulo, .carousel-text{
+    background-color: #e782cd;
+    font-size: 1.6rem;
+}
+
+.carousel-button {
+    border-radius: 30px;
+    border-color: cyan;
+    background-color: ghostwhite;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
