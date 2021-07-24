@@ -18,20 +18,46 @@
 }
 
 .contenedor__carrusel {
-    width: 60%;
+    width: 50%;
     margin: auto;
     
 }
 .carousel-titulo, .carousel-text{
-    background-color: #e782cd;
+    background-color: ghostwhite ;
+    color: rgb(69, 63, 141);
     font-size: 1.6rem;
+    padding: 2px;
 }
 
 .carousel-button {
-    border-radius: 30px;
+    border-radius: 20px;
     border-color: cyan;
     background-color: ghostwhite;
+    color: rgb(69, 63, 141);
     font-size: 1.5rem;
     font-weight: bold;
+    padding: 9px;
 
+}
+
+.div__paquetes {
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  
+}
+.div__paquetes__parrafo {
+    width: 20%;
+    height: auto;
+    padding: 20px;
+    border: solid magenta;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: rgb(69, 63, 141) ;
 }

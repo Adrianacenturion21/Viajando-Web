@@ -1,0 +1,13 @@
+.buscador {
+    margin: 15px;
+    padding: 15px;
+    width: 90%;
+    height: 30%;
+    box-sizing: border-box;
+    border: solid grey;
+    border-radius: 20px;
+    display: flex ;
+}
+.container {
+    margin-top: 1%;
+}
