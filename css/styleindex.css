@@ -3,13 +3,14 @@
     padding: 0px;
 }
 
+
+
+
 /*Estilos del Header*/
 
 
-#header {
-    /* background-image: linear-gradient(to right, #00ffff, magenta); */
+ #header {
     background-color: ghostwhite;
-    margin-bottom: 1%;
     height: auto;
     width: 100%;
     display: flex;
@@ -17,8 +18,8 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    /* position:fixed; */
-    z-index: 30;
+    position:sticky;
+    
 }
 
 .contenedor {
@@ -33,58 +34,93 @@
 }
 .header__titulo h1 {
     font-family: 'Aclonica', sans-serif;
-    color:blue;
-    font-size: 3rem;
+    color:rgb(0, 0, 255);
+    font-size: 2.5rem;
     text-align:left;
     margin-left: 20px;
    
 }
 
-/*Estilos del Nav*/
-.header__menu nav :hover  {   
-    background-color: magenta;     
-}
-.header__menu nav ul {
-    display:flex;
-    align-items:flex-start;
-    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.10);
-    font-weight: bolder;
-    /* background-image: radial-gradient(circle,#0ae1d7 13%,#60b2f0 29%,#e782cd 71%); */
-      
-}
-.header__menu nav ul li {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    margin: 15px;
-    letter-spacing: 1px;
-        
-}
-
-.header__menu nav ul li a {
-    text-decoration: none;
-    color: rgb(46, 42, 42);
-}
-.header__menu ul ul {
-    display: none;
-	position: absolute; 
-	top: 55px;
-}
-.header__menu nav ul li:hover > ul {
-	display: inherit;
-}
-.header__menu nav ul ul li {
-	width: 170px;
-	display: list-item;
-	position: relative;
-}
-.header__buscador {
-    height: 90px;
+.header__section {
+    height: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
 }
 
+.header__buscador {
+    border:groove;
+    border-radius: 5px;
+}
+.header__buscador__input {
+    border: none;
+}
+
+.fas {
+    color: grey;
+}
+
+/*ESTILOS DEL NAV*/
+
+.navbar {
+    /* box-shadow: 0 0.3rem 0.3rem rgba(215, 214, 255, 0.808); */
+    
+}
+
+.navbar__nav {
+   background-color: white;
+}
+
+.navbar__nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    
+}
+
+.navbar__nav__item {
+    padding: 5px 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1E26EB;
+    background-color: white;
+}
+
+.navbar__nav__item:hover {
+    background-color: #19D3DB;
+}
+
+.navbar__nav__item--submenu {
+    position: relative;
+
+}
+
+.navbar__nav__item--submenu:hover .navbar__nav__list--dos{
+    display: block;
+
+}
+
+.navbar__nav__list--dos {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    min-width: 160px;
+    background-color: white;
+    display: none;
+}
+
+.navbar__nav__link {
+    text-decoration: none;
+    color: #1E26EB;
+}
+
+.main {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
 /*Presentación*/
 .intro {
     margin: 0px;
@@ -103,11 +139,10 @@
 
 .intro__titulo {
     margin-top: 40px;
-    font-style: italic;
+    font-style:oblique;
     font-size: 4rem;
     color:ghostwhite;
     position: relative;
-    
 }
 
 .intro__parrafo {
@@ -116,20 +151,26 @@
     font-size: 2rem;
     color: whitesmoke;
 }
+
+.intro__secciones {
+    margin: 0;
+    padding: 5%;
+    height: auto;
+
+}
 .intro__texto {
     font-family:'Arial Narrow Bold', sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.8rem;
-    color:rgb(69, 63, 141);
-    margin: 5px;
-    padding: 10px;
+    font-weight:normal;
+    font-size: 2rem;
+    color:#1E26EB;
+    margin: 0px;
+    padding: 0px;
     text-align: center;
-    box-sizing: border-box;
-    border: 10px;
+    
+    
 }
 
-/*inicio secciones BOTON NAV*/
+/*Secciones BOTON NAV*/
 #secciones {
     margin: 0px;
     padding: 0px;
@@ -139,33 +180,29 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items:flex-start;
-    background-image: radial-gradient(circle,#0ae1d7 13%,#60b2f0 29%,#e782cd 71%);
+    align-items:center;
+   
 }
 
 .seccion {
-    border-radius: 15px 15px 15px 15px;
-    border-style: outset;
-    width: 320px;
-    height: 280px;
-    margin:5px;
+    margin: 5px;
+    width: 280px;
+    height: 220px;
     background-color:ghostwhite;
     display: flex;
     align-items:flex-end;
     justify-content: center;
-    background-size: cover;
     position: relative;
 }
 
 .seccion-img {
-    height: 90%;
-    width: 90%;
-    position:absolute;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    position:absolute;  
 }
 
 .seccion a {
-    text-decoration: none;
+    text-decoration: none;   
 }
 
 .seccion-titulo {
@@ -173,34 +210,38 @@
     position: relative;
     font-family:  sans-serif;
     font-weight: bold;
-    color:rgb(69, 63, 141);
-    background-color: ghostwhite;
+    color:white;
+    background-color: #1E26EB;
     margin: 1px;
-    padding: 15px;
-    border-radius: 30px;
-    border-style:outset;
-    border-color: cyan;
+    padding: 10px;
+    border-radius: 10px;
+    border-style:none;
+    
 }
 
-.seccion a :hover{
-    background-color: cyan;
+.seccion-titulo:hover{
+    transform: scale(1.1);
 }
 
 .section__boxes {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     justify-content: center;
     align-items: center;
-    margin: 1%;
-    padding: 2%;
+    margin-top: 15px;
+    padding: 1%;
+    background-color: #1E26EB;
+    width: 100%;
+    height: auto;
     
 }
 
 .section__titulo {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
+    
     font-size: 2.5rem;
-    color:rgb(47, 9, 134);
+    color:white;
+    
 
 }
 
@@ -287,19 +328,23 @@
 
 /*ESTILOS HTML RESEÑAS*/
 
-.seccionReseñas {
-    margin: 10px
+.seccion__comentarios {
+    padding: 5%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    
 }
-.seccionReseñas .seccionReseñas__cuadro{
+
+.seccionReseñas {
     position: relative;
-    width: 40%;
+    width: 100%;
     height: auto;
-    margin: auto;
     padding: 2%;
-    border: 2px;
-    border-style: groove;
-    border-color: cyan;
-    background-image: radial-gradient(circle,#0ae1d7 13%,#60b2f0 29%,#e782cd 71%);
+    border: 1px;
+    border-style: solid ;
+    border-color: #19D3DB;
+    /* background-image: radial-gradient(circle,#19D3DB,#1E26EB); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,101 +353,63 @@
 }
 
 .seccionReseñas__titulo {
-    margin: 0px;
+    margin: 3px;
     padding: 10px;
-    border-radius: 50px;
-    border-style: groove;
-    background-color: cyan;
+    border-style: none;
+    color: white;
+    background-color: #1E26EB;
     align-items: center;
     justify-content: center;
-    font-family: Verdana, Tahoma, sans-serif;
-    font-weight: bolder;
-    font-size: 1.5rem;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 }
 
 .seccionReseñas__item {
-    margin: 12px;
+    margin: 5px;
+    padding: 5px;
+    /* border: solid #FE0057 2px ; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    
+}
+.seccionReseñas label{
+    padding: 12px;
 }
 
+.seccionReseñas__item textarea {
+    width: 100%;
+    grid-column: 1 / -1;
+    
+    
+}
 .seccionReseñas input {
     border-radius: 20px;
+    
 }
 
-/*Boxes con Transformaciones y animaciones Sección IMPERDIBLES INDEX*/
-/* .container__box {
-    margin: 0.5%;
-    padding: 1.2%;
-    box-sizing: border-box;
-    border: 2px solid magenta;
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-
-
-.box {
-    border: 10px solid aqua;
-    display: flex;
-    justify-content: center;
-}
-
-.box__contain {
-    width: 500px;
-    position: relative;
-    top: 0;
-    transition: all 1s ease-in;
-}
-
-.box__figure {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.box__img {
-    width: 100%;
-    display: block;
-}
-
-.box__texto {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: black;
-    position: absolute;
-    top: 0;
-}
-
-.box__direction {
+.reseña {
+    grid-column: 1 / -1;
     text-align: center;
-    padding: 20px;
-    transition: all 1s ease-in;
+}
+.reseña__uno {
+    display: flex;
+    grid-column: 1 / -1;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-
-.box__direction--right {
-    transform:translate(100%)
+.reseña__uno input {
+    margin: 9px;
 }
 
-.box__direction--left {
-    transform: translate(-100%);
+.seccionReseñas__terminos {
+    grid-column: 1 / -1;
+    text-align: center;
+    
 }
-
-.box__contain:hover .box__direction--left {
-    transform: translate(0%);
-}
-
-.box__contain:hover .box__direction--right {
-    transform: translate(0%);
-}
-
-.box__contain:hover {
-    background-color: yellow;
-    opacity: 0.8;
-} */
 
 /*ESTILOS DEL FOOTER*/
 #footer {
@@ -410,34 +417,28 @@
     padding: 0px;
     width: 100%;
     height: 300px;
-    border-top: solid black;
+    border-top: solid rgb(77, 74, 74);
     /* background-image: linear-gradient(to left,  #00ffff, magenta); */
-    background-color: rgb(252, 164, 208);
+    background-color: rgb(219, 219, 219);
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    
 }
 .footer__contacto {
-
+    color: #FE0057;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     font-family: Arial, sans-serif;
 }
-.icon img {
-    height: 32px;
-    width: 32px;
-}
-.footer__privacidad {
-    margin: 0px;
-    padding: 5px;
-}
-.footer__nosotros {
-    margin: 0px;
-    padding: 5px;
 
+.footer__link {
+    text-decoration: none;
+    color: #FE0057;
+    
 }
 
 .footer__redes {
@@ -467,15 +468,15 @@
 .footer__icon.instagram:hover, .footer__icon.facebook:hover {
     border: 2px solid;
     background: white;
-    color: #bb0000;
-    border-color: #bb0000;
+    color: #FE0057;
+    border-color: #FE0057;
 }
 .footer__icon.instagram {
-    background: #DB4189;
+    background: #FE0057;
 }
 .footer__icon.instagram:hover {
-    color: #DB4189;
-    border-color: #DB4189;
+    color: #FE0057;
+    border-color: #FE0057;
 }
 
 .footer__icon.facebook {
@@ -487,31 +488,27 @@
     border-color: #2a4deb;
 }
 
-
+/*SECCION CARDS ANIMADAS INDEX*/
 .card-index {
-    margin: 10px auto 0 auto;
+    /* padding: 3%; */
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: space-between;
-     
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
 }
   
 .card-index-cards {
-    border-radius: 10px 10px 10px 10px;
+    
     width: 380px;
     height: 410px;
-    margin: 2% 0 2% 0;
-    background-color: aquamarine;
+    margin: 2%;
+    background-color: ghostwhite;
     display: inline-block;
     background-size: cover;
     position: relative;
     transition: all 0.4s ease-out;
     overflow: hidden;
-    color: purple;
+    color: #FE0057;
     font-family: sans-serif;
     text-align: center; 
 }
@@ -564,11 +561,11 @@
 }
   
 .card-index-cards:hover h1 {
-    color: blue; 
+    color: #1E26EB; 
 }
   
 .card-index-cards:hover img {
-    opacity: 0.2; 
+    opacity: 0.4; 
 }
   
 .card-index-cards:hover .animate-text {
@@ -576,6 +573,28 @@
     opacity: 1; 
 }
   
+
+/*MEDIA QUERIES INDEX*/
+
+@media screen and (max-width:992px) {
+     .card-index {
+        grid-template-columns: repeat(2,1fr);
+        
+
+     }
+
+    
+}
+
+@media screen and (max-width:576px) {
+    .card-index {
+       grid-template-columns: 1fr;
+       
+
+    }
+
+   
+}
 
 /* Estilos de VUELOS.HTML */
   
